@@ -1,5 +1,38 @@
 {
-    "name": "ajiho/think-csrf",
-    "license": "MIT",
-    "require": {}
+  "name": "ajiho/think-csrf",
+  "description": "Thinkphp6 solves CSRF attacks",
+  "keywords": [
+    "thinkphp6",
+    "csrf"
+  ],
+  "homepage": "https://gitee.com/ajiho/think-csrf",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ajiho\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "ajiho",
+      "email": "lujiahao@88.com",
+      "homepage": "https://gitee.com/ajiho",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "topthink/framework": "^6.0.0"
+  },
+  "extra": {
+    "think": {
+      "config": {
+        "csrf": "src/config.php"
+      }
+    }
+  }
 }
